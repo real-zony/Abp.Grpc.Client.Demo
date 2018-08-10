@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Abp.Grpc.Client" Version="1.0.7" />
+    <PackageReference Include="Abp.Grpc.Client" Version="3.8.2.4" />
   </ItemGroup>
 
 </Project>

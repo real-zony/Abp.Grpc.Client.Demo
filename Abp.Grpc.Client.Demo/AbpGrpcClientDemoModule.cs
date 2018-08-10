@@ -1,5 +1,5 @@
-﻿using Abp.Grpc.Client.Configuration;
-using Abp.Grpc.Client.Extensions;
+﻿using Abp.Grpc.Client.Extensions;
+using Abp.Grpc.Common.Configuration;
 using Abp.Modules;
 
 namespace Abp.Grpc.Client.Demo
@@ -9,6 +9,7 @@ namespace Abp.Grpc.Client.Demo
     {
         public override void PreInitialize()
         {
+            // 配置 Consul 服务地址
             Configuration.Modules.UseGrpcClient(new ConsulRegistryConfiguration("10.0.75.1", 8500, null));
         }
     }
